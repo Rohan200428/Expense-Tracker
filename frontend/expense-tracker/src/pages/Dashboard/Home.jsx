@@ -5,8 +5,8 @@ import { LuHandCoins, LuWalletMinimal } from "react-icons/lu";
 import { IoMdCard } from "react-icons/io";
 
 import { useNavigate } from "react-router-dom";
-import InfoCard from "../../components/cards/InfoCard.jsx";
-import { useUserAuth } from "../../hooks/useUserAuth.jsx";
+import InfoCard from "../../components/Cards/InfoCard.jsx";
+import { useUserAuth } from "../../hooks/useUserAuth.js";
 import axiosInstance from "../../utils/axiosInstance.js";
 import { API_PATHS } from "../../utils/apiPaths.js";
 import { addThousandsSeparator } from "../../utils/helper.js";
