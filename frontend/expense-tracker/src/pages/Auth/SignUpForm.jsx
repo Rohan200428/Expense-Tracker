@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
-import AuthLayout from "../../components/Layouts/AuthLayout.jsx";
+import AuthLayout from "../../components/Layouts/AuthLayout";
 import { Link, useNavigate } from "react-router-dom";
-import Input from "../../components/Inputs/Input.jsx";
-import { validateEmail } from "../../utils/helper.js";
-import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector.jsx";
-import { API_PATHS } from "../../utils/apiPaths.js";
-import uploadImage from "../../utils/uploadImage.js";
-import { UserContext } from "../../context/UserContext.jsx";
-import axiosInstance from "../../utils/axiosInstance.js";
+import Input from "../../components/Inputs/Input";
+import { validateEmail } from "../../utils/helper";
+import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector";
+import { API_PATHS } from "../../utils/apiPaths";
+import uploadImage from "../../utils/uploadImage";
+import { UserContext } from "../../context/UserContext";
+import axiosInstance from "../../utils/axiosInstance";
 
 const SignUpForm = () => {
   const [profilePic, setProfilePic] = useState(null);
