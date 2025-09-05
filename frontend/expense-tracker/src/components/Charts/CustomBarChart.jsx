@@ -18,6 +18,7 @@ const CustomBarChart = ({ data }) => {
   };
 
   const CustomTooltip = ({ active, payload }) => {
+  import CustomTooltip from './CustomTooltip'; // Correct casing and extension for local file
     if (active && payload && payload.length) {
       return (
         <div className="bg-white shadow-md rounded-lg p-2 border border-gray-300">
@@ -25,20 +26,8 @@ const CustomBarChart = ({ data }) => {
           <p className="text-sm text-gray-600">
             Amount: <span className="text-sm font-medium text-gray-900">${payload[0].payload.amount}</span>
           </p>
-        </div>
-      );
-    }
-    return null;
-  };
-
-  return (
-    <div className="bg-white mt-6">
-      <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data}>
-          <CartesianGrid stroke="none" />
-
-          <XAxis dataKey="month" tick={{ fontSize: 12, fill: "#555" }} stroke="none" />
           <YAxis tick={{ fontSize: 12, fill: "#555" }} stroke="none" />
+    // Removed inline CustomTooltip definition, now imported from CustomTooltip.js
 
           <Tooltip content={CustomTooltip} />
 

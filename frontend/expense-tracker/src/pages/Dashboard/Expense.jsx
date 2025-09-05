@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import DashboardLayout from "../../components/layouts/DashboardLayout";
+import DashboardLayout from "../../components/Layouts/DashboardLayout.jsx";
 
 import { useNavigate } from "react-router-dom";
-import { useUserAuth } from "../../hooks/useUserAuth";
-import axiosInstance from "../../utils/axiosInstance";
-import { API_PATHS } from "../../utils/apiPaths";
-import IncomeOverview from "../../components/Expense/ExpenseOverview";
-import ExpenseList from "../../components/Expense/ExpenseList";
-import ExpenseOverview from "../../components/Expense/ExpenseOverview";
-import AddExpenseForm from "../../components/Expense/AddExpenseForm";
-import DeleteAlert from "../../components/DeleteAlert";
-import Modal from "../../components/Modal";
+import { useUserAuth } from "../../hooks/useUserAuth.js";
+import axiosInstance from "../../utils/axiosInstance.js";
+import { API_PATHS } from "../../utils/apiPaths.js";
+import IncomeOverview from "../../components/Expense/ExpenseOverview.jsx";
+import ExpenseList from "../../components/Expense/ExpenseList.jsx";
+import ExpenseOverview from "../../components/Expense/ExpenseOverview.jsx";
+import AddExpenseForm from "../../components/Expense/AddExpenseForm.jsx";
+import DeleteAlert from "../../components/DeleteAlert.jsx";
+import Modal from "../../components/Modal.jsx";
 import toast from "react-hot-toast";
 
 const Expense = () => {
